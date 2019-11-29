@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* SCSS Document */
+
+/* ------各ブロック-------*/
+section, header, footer, main, .container {
+  width: 100%;
+  min-width: 800px;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 80px 0;
+	overflow: hidden;
+  position: relative;
+}
+
+/* ------フォント-------*/
+.alata {
+  font-family: $Alata;
+}
+
+@media screen and (max-width: 768px) {
+  /* ------各ブロック-------*/
+section, header, footer, main, .container {
+  min-width: auto;
+}
+.container {
+  width: 90%;
+  padding: 40px 0;
+}
+}
