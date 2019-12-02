@@ -1,6 +1,12 @@
 # cw-calculator
 
-> My cool Nuxt.js project
+> My first Nuxt project
+
+クラウドワークスで仕事に応募をする際に入力が求められる契約金額を、希望の手取り金額から算出できる計算ツールです。
+
+公開URL
+
+https://cw-calculator.inoshunnomad.com/
 
 ## Build Setup
 
