@@ -4,7 +4,8 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "CW Calc | クラウドワークス（CrowdWorks）での契約金額を手取り金額から計算するツール",
+    title:
+      "CW Calc | クラウドワークス（CrowdWorks）での契約金額を手取り金額から計算するツール",
     htmlAttrs: {
       lang: "ja"
     },
@@ -24,7 +25,32 @@ export default {
         name: "description",
         content:
           "クラウドワークス（CrowdWorks）で固定報酬制の仕事に応募する際に入力を求められる契約金額を、希望の手取り金額（ワーカーが受け取る金額）から算出するための計算ツールです。"
-      }
+      },
+      { hid: "og:site_name", property: "og:site_name", content: "CW Calc" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://cw-calculator.inoshunnomad.com/"
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content:
+          "CW Calc | クラウドワークス（CrowdWorks）での契約金額を手取り金額から計算するツール"
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "クラウドワークス（CrowdWorks）で固定報酬制の仕事に応募する際に入力を求められる契約金額を、希望の手取り金額（ワーカーが受け取る金額）から算出するための計算ツールです。"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://cw-calculator.inoshunnomad.com/ogp.png"
+      },
+      { name: "twitter:card", content: "summary_large_image" }
     ],
     link: [
       { rel: "icon", type: "image/png", href: "/favicon.png" },
@@ -53,7 +79,11 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-149531425-2'
+    }]
+  ],
   /*
    ** Nuxt.js modules
    */
