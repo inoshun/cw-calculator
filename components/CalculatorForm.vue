@@ -76,7 +76,7 @@ export default {
           ///////// 20万円に収まっている場合は、契約金額（this.contractAmount)＝上で求めた金額（contractAccurateAmount）
           this.contractAmount = contractAccurateAmount;
         } else {
-          ///////// 20万円を超える場合は、20万円を超えた分にかかるシステム利用料を20%として契約金額（税抜き）を計算
+          ///////// 20万円を超える場合は、20万円を超えた分にかかるシステム利用料を5%として契約金額（税抜き）を計算
 
           // クライアントが支払う金額 = contractAmount*1.1（契約金額＋消費税）
           // 10万円以下の部分の額にかかるシステム利用料 = 100000*0.2*1.1
